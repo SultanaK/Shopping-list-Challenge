@@ -29,11 +29,12 @@ function shoppingList() {
         })
     //Checked Item
 
-    $('.shopping-list').on('click', 'shopping-item-toggle', function (event) {
+    $('.shopping-list').on('click', '.shopping-item-toggle ', function (event) {
         event.preventDefault();
-        //$(this).parent().parent().find('.shopping-item').addClass('.shopping-item-checked');
-        $(event.target).closest('li').find('.shoping-item').toggleClass('.shopping-item-checked');
-        console.log('$');
+        //$(this).parent().parent().find('.shopping-item').toggleass('.shopping-item-checked');
+        $(event.target).closest('li').find('.shopping-item').toggleClass('shopping-item-checked');
+       // $(document).on('click')
+        //console.log($(event.target).closest('li').find('.shopping-item'));
         
     })
 }
