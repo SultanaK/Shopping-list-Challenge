@@ -42,10 +42,10 @@ button:hover {
   margin-bottom: 15px;
 }
 
-.shopping-item {
+/* .shopping-item {
   text-decoration: line-through;
-}
+} */
 /* add checked class */
 .shopping-item__checked {
   text-decoration: line-through;
-} 
+}  

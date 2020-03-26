@@ -21,9 +21,18 @@ function shoppingList() {
         }
         else return alert(`Input can't be empty`) 
         })
-    }
+   // Delete Item 
    
-    
-//}
+        $('.shopping-list').on('click', '.shopping-item-delete', function (event) {
+            event.preventDefault();
+            $(event.target).closest('li').remove(); 
+        })
+    //Checked Item
 
+    $('.shopping-list').on('click', 'shopping-item-toggle', function (event) {
+        event.preventDefault();
+        $(this).closest('li').find('.shopping-item').toggleClass('.shopping-item__checked')
+        
+    })
+}
 $(shoppingList);
