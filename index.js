@@ -31,7 +31,9 @@ function shoppingList() {
 
     $('.shopping-list').on('click', 'shopping-item-toggle', function (event) {
         event.preventDefault();
-        $(this).closest('li').find('.shopping-item').toggleClass('.shopping-item__checked')
+        //$(this).parent().parent().find('.shopping-item').addClass('.shopping-item-checked');
+        $(event.target).closest('li').find('.shoping-item').toggleClass('.shopping-item-checked');
+        console.log('$');
         
     })
 }
