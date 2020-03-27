@@ -25,14 +25,14 @@ function shoppingList() {
    
         $('.shopping-list').on('click', '.shopping-item-delete', function (event) {
             event.preventDefault();
-            $(event.target).closest('li').remove(); 
+            $(this).closest('li').remove(); 
         })
     //Checked Item
 
     $('.shopping-list').on('click', '.shopping-item-toggle ', function (event) {
         event.preventDefault();
         //$(this).parent().parent().find('.shopping-item').toggleass('.shopping-item-checked');
-        $(event.target).closest('li').find('.shopping-item').toggleClass('shopping-item-checked');
+        $(this).closest('li').find('.shopping-item').toggleClass('shopping-item-checked');
        // $(document).on('click')
         //console.log($(event.target).closest('li').find('.shopping-item'));
         
